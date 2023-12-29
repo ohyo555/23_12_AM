@@ -33,7 +33,6 @@ public class Main {
 
 				Article article = new Article(id, title, body);
 				articles.add(article);
-//				System.out.println(title + " / " + body);
 
 				System.out.printf("%d번 글이 생성 되었습니다.\n", id);
 				lastArticleId++;
@@ -48,6 +47,25 @@ public class Main {
 						System.out.printf("  %4d  /   %s  \n", article.getId(), article.getTitle());
 					}
 				}
+
+			} else if (cmd.startsWith("article detail ")) {
+
+				String[] cmdDiv = cmd.split(" ");
+				System.out.println(cmdDiv[0]);
+				System.out.println(cmdDiv[1]);
+				System.out.println(cmdDiv[2]);
+
+				int id = 0;
+
+				// article detail 1 => "1" => 1
+				try {
+					id = Integer.parseInt(cmdDiv[2]);
+				} catch (Exception e) {
+					System.out.println("번호는 정수로 입력해");
+					continue;
+				}
+
+				System.out.printf("%d번 게시글은 없습니다\n", id);
 			} else {
 				System.out.println("사용할 수 없는 명령어입니다");
 			}
