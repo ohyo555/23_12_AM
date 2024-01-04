@@ -25,6 +25,10 @@ public class ArticleController extends Controller {
 
 		switch (actionMethodName) {
 		case "write":
+			if (isLogined() == false) {
+				System.out.println("로그인 하고 이용해");
+				break;
+			}
 			doWrite();
 			break;
 		case "list":
@@ -46,6 +50,7 @@ public class ArticleController extends Controller {
 	}
 
 	private void doWrite() {
+
 		System.out.println("==게시글 작성==");
 		int id = lastArticleId + 1;
 		String regDate = Util.getNowDate_TimeStr();
