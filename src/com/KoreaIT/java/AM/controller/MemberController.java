@@ -67,8 +67,9 @@ public class MemberController extends Controller {
 			return;
 		}
 
-		loginedMember = member;
-
+		loginedMember = member; // 여기에 저장된 로그인아이디를 글쓸때 남겨주고 싶은데
+//		String username = loginedMember.getName();
+		 
 		System.out.printf("로그인 성공! %s님 반갑습니다.\n", member.getName());
 
 	}
