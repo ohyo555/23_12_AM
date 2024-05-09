@@ -1,7 +1,7 @@
 ## 회원 + 게시글 프로젝트
 
 #### ♟️ 구조
-- MVC
+- MVC(Model, View, Controller)
 - Dao(Data Access Object): DB의 데이터에 접근하기 위한 객체, 직접 DB에 접근, 데이터 삽입, 삭제, 조회
 - Dto(Data Transfer Object): 계층 간 데이터 교환은 위함, 로직을 가지지 않는 데이터 객체, getter/setter 메소드만 가짐
 
