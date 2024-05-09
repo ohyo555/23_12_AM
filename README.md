@@ -4,7 +4,6 @@
 - MVC
 - Dao(Data Access Object): DB의 데이터에 접근하기 위한 객체, 직접 DB에 접근, 데이터 삽입, 삭제, 조회
 - Dto(Data Transfer Object): 계층 간 데이터 교환은 위함, 로직을 가지지 않는 데이터 객체, getter/setter 메소드만 가짐
-- VO(Value Object): read-only 속성을 가진 값 오브젝트, getter 메소드만 존재
 
 #### 📝 게시글 (명언앱과 비슷한 기능 + 로그인 후 사용 가능한 서비스)
 
